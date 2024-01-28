@@ -1,0 +1,9 @@
+dotnet ef dbcontext scaffold "Data Source=Promotions/Promotions.db" Microsoft.EntityFrameworkCore.Sqlite --context-dir Data --output-dir Models
+
+-- Scaffolds DbContext and model classes by using the provided connection string.
+-- Specifies to use the Microsoft.EntityFrameworkCore.Sqlite database provider.
+-- Specifies directories for the resulting DbContext and model classes.
+
+In real-world code, always store your connection strings in a secure location.
+
+If the database changes, you can generate new scaffolded files. The generated files are overwritten each time, but they're created as partial classes, so you can extend them with custom properties and behaviors in your own, separate files.
